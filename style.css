@@ -1,0 +1,376 @@
+.container-fluid{
+
+  width: auto;
+}
+
+/* Footer */
+
+.footer{
+height: 340px;
+background-color: rgba(19, 18, 22, 0.282);
+
+}
+.footer-container{
+background-color: rgba(59, 57, 57, 0.543);
+list-style: none;
+
+}
+.footer-contact-row{
+padding: 23px;
+color: rgb(61, 61, 61);
+
+}
+
+
+
+.Bottom-Footer-Container{
+
+list-style: none; /* Get rid of the Bullet on the list items. */
+
+
+}
+
+
+
+
+
+/*End of  Footer */
+
+
+
+
+
+.accordion-body{
+
+background-color: rgb(250, 238, 215);
+font-size: large;
+padding: 2.5rem;
+
+}
+
+
+
+.accordion{
+
+/*  */
+
+width: 55%;
+padding: 5rem;
+text-align: center;
+margin: auto;
+}
+body {
+
+text-align: center;
+font-size: larger;
+}
+
+
+
+.imprnt-text{
+  
+text-decoration: underline;
+  text-decoration-color: rgb(137, 73, 10);
+  font: bold;
+  color: rgb(102, 61, 27);
+}
+
+
+                                                                                  /* row formats */
+.row{
+    padding:40px;
+flex-wrap: wrap;
+flex: auto;
+justify-content: space-around;
+justify-content: space-between;
+flex-direction: row;
+
+
+}
+
+
+                                                                                  /* Navigation  */
+
+.navbar {
+    font-size: larger;
+    text-align: center; /* Center align the text horizontally */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline; /* Display list items horizontally */
+    margin: 0 20px; /* Adjust the horizontal spacing between items */
+  }
+  
+  .navbar a {
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration:underline;
+    color: rgb(124, 61, 137);
+  }
+  
+
+
+
+
+  /* About Me Section  */
+
+  #about-me-info-row{
+margin-top: 3.4rem;
+background-color:rgba(128, 128, 128, 0.194);
+padding: 22px;
+border-radius: 22px;  
+
+}
+
+.about-img{
+
+width: 700px;
+border-radius: 3%;
+
+}
+
+
+#about-me-info-row .col-md-3:hover{
+
+    transform: translateY(10px); /* Move the card up by 5 pixels on hover */
+    transition-delay: 0.3s; 
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    cursor: pointer;
+}
+
+
+                                                    /* hero  section */
+
+
+
+#Projects-title{
+
+
+font-weight: 400;
+
+}
+
+
+
+
+
+.hero{
+
+margin-top: 6.4rem;
+padding: 34px;
+
+}
+
+
+#hero-profile-pic{
+
+                                            /* the Profile pic in the hero section*/
+width: 1200px;
+float: none;
+border-radius: 84px;
+padding: 45px;
+
+}
+
+.hero-title{
+/* herotitle paragraph here  */
+width: 600px;
+float: right;
+padding: 20px;
+border: 1.5px solid;
+border-radius: 24px;
+color: rgb(96, 75, 149); 
+}
+.hero-title h4,h3{
+color: black;
+/* Front-End Specialist */
+/* Junior web Developer */
+
+}
+.hero-title p {
+  margin-top: 1.3rem;
+  line-height: 5.2rem;
+  color: rgb(96, 75, 149);
+  font-size: 32px;
+/* herotitle paragraph here  */
+
+/* Creating a border here  - improve readabliity*/
+
+}
+
+
+                                                      /* project section  */
+
+
+
+
+
+#project-row,.col-md-4{
+  margin-top: 22px;
+  text-align: center;
+  margin: auto;
+  padding: 34px;
+}
+
+
+                                                                          /* Projects */
+                                                                          /* Cards */
+#p-card{
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*Drop shadow*/
+background-color:rgb(88, 97, 107);
+color: aliceblue;
+transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.card-body a { 
+
+
+font-weight: 500;
+text-decoration: none;
+font-size: larger;
+
+}
+
+.card-link-2{
+
+color: whitesmoke;
+
+}
+.card-link-1{
+
+color: rgb(207, 134, 249);
+
+}
+
+
+.card:hover {
+  transform: translateY(20px); /* Move the card up by 5 pixels on hover */
+  transition-delay: 0.3s; 
+
+}
+
+                                                                    /* -Contact- */
+
+
+#Contact-Form{
+
+margin-top: 12.4rem;
+
+
+}
+
+
+                                                /* Form */
+                                                form{
+                                                  padding: 53px;
+                                                  background-color:rgb(88, 97, 107);
+                                                border-radius: 24px;
+                                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                                                }
+
+                                                .form-control{
+                                                margin-top: 12px;
+                                                width: 735px;
+                                                text-align: center;
+                                                margin: auto;
+                                                height: 3.1rem;
+                                                }
+
+
+#Contact-Title{
+font-weight: 400;
+
+}
+
+/* Websites Css styles */
+
+.about-paragraph-1 {
+width: 900px;
+font-size: .92em;
+padding: 3rem;
+
+
+
+margin: auto;
+}
+
+#grnz-hero-pic{
+
+width: auto;
+border-radius: 24px;
+}
+
+#grnz-hero-pic-text{
+  margin-top: 4.3rem;
+ font-size: larger;
+ font-weight: 600;
+  line-height: 4.1rem;
+  line-break:auto;
+ 
+}
+
+#grnz-row-a{
+
+padding: 124px;
+
+}
+
+
+#Grnz-title{
+
+font-weight: 800;
+letter-spacing: 0.8rem;
+font-size: 5rem;
+}
+
+#grnz-cookie-pic{
+
+padding: 56px;
+
+border-radius: 5px;
+}
+
+#grnz-cookie-pic p{
+  text-align: right;
+  font-size: 24px;
+  padding: 12px;
+
+}
+
+#grnz-code-pic{
+
+  padding: 22px;
+  border-radius: 42px;
+}
+
+
+#grnz-product-text{
+  margin-top: 4.2rem;
+line-height: 2.23rem;
+text-align: center;
+
+}
+
+#grnz-title{
+
+  font-size: 10.4rem;
+}
+
+#title-section{
+
+
+  margin-top:66rem;
+}
+
+.white-space{
+
+height: 200px;
+
+}
