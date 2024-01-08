@@ -37,15 +37,25 @@ list-style: none; /* Get rid of the Bullet on the list items. */
 /*End of  Footer */
 
 
+/* Accordion styling here  */
 
 
 
+
+.accordion-button{
+text-align: center;
+font-size: 32px;
+padding: 32px;
+letter-spacing: 0.032em;
+}
 .accordion-body{
+text-align: center;
+margin-top: 52px;
 
-background-color: rgb(250, 238, 215);
-font-size: large;
 padding: 2.5rem;
-
+line-height: 3.43rem;
+letter-spacing: 0.08em;
+font-size:1.13em ;
 }
 
 
@@ -59,6 +69,11 @@ padding: 5rem;
 text-align: center;
 margin: auto;
 }
+
+
+
+
+
 body {
 
 text-align: center;
@@ -307,9 +322,37 @@ margin-top: 12.4rem;
 
 #Contact-Title{
 font-weight: 400;
+/* Contact title on the index page */
+}
+/* ICON STYLING */
+.bi-code-slash{
+  margin-right: 15px;
+  width: 24px;
+    height: 24px;
 
 }
 
+.bi-gear-wide-connected{
+
+
+  margin-right: 15px;
+  width: 54px;
+    height: 54px;
+
+}
+
+
+.bi-eye-fill{
+margin-right:15px;
+width: 24px;
+  height: 24px;
+}
+.bi-envelope-arrow-down{
+/* Email Icon next to the contact Title. */
+width: 320px;
+height: 420px;
+
+}
 /* Websites Css styles */
 
 .about-paragraph-1 {
