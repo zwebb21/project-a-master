@@ -213,15 +213,23 @@ color: black;
 
 
 #project-row,.col-md-4{
+  width:fit-content;/* Fit content centerd the cards into the middle on the wider vp*/
+  
   margin-top: 22px;
   text-align: center;
   margin: auto;
-  padding: 34px;
+padding: 124px;
 }
+/* Card styling starts here.  */
+
+               .card-title{
+                font-size: xx-large;
+                color: rgb(224, 224, 224);
 
 
-                                                                          /* Projects */
-                                                                          /* Cards */
+
+               }                                                           /* Projects */
+                                                                          
 #p-card{
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*Drop shadow*/
@@ -231,21 +239,29 @@ transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .card-body a { 
 
-
+letter-spacing: 0.3rem;
 font-weight: 500;
 text-decoration: none;
-font-size: larger;
+font-size: xx-large;
 
 }
-
 .card-link-2{
+  color: rgb(44, 41, 41);
 
-color: whitesmoke;
+}
+.card-link-2:hover{
+
+color: rgb(252, 251, 252);
 
 }
 .card-link-1{
 
-color: rgb(207, 134, 249);
+color: rgb(165, 165, 165);
+
+}
+.card-link-1:hover{
+
+color: white;
 
 }
 
@@ -256,6 +272,11 @@ color: rgb(207, 134, 249);
 
 }
 
+.card-text{
+font-size: x-large;
+
+
+}
                                                                     /* -Contact- */
 
 
