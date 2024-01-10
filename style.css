@@ -381,12 +381,29 @@ border-radius: 24px;
 }
 
 #grnz-row-a{
-
-padding: 124px;
+  padding: 24px;
 
 }
 
 
+
+
+
+
+
+
+.container-links-grnz{
+margin-left: 535px;
+display: flex;
+
+}
+
+
+
+.list-grnz-links{
+  text-decoration: none;
+  list-style: none;
+}
 #Grnz-title{
 
 font-weight: 800;
