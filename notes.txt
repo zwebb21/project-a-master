@@ -1,0 +1,7 @@
+"GRNZ is a hands-on project where I delved into the world of web development, 
+honing my skills in using Bootstrap to create a seamless integration of HTML and CSS.
+ Throughout the project, I focused on mastering the art of structuring content with divs, 
+ implementing responsive design principles, and efficiently linking HTML files. 
+ The journey involved a deep dive into Bootstrap components, providing a solid foundation
+  for creating modern and visually 
+appealing web interfaces.
