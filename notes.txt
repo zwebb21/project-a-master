@@ -5,3 +5,7 @@ honing my skills in using Bootstrap to create a seamless integration of HTML and
  The journey involved a deep dive into Bootstrap components, providing a solid foundation
   for creating modern and visually 
 appealing web interfaces.
+
+
+
+/justwannalive.club/index.html
