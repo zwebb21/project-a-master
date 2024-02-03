@@ -1,0 +1,227 @@
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+
+  }
+.col-4 h3 {
+
+margin-top: 65px;
+font-size: large;
+
+
+}
+
+.col-4{
+
+text-align: center;
+
+
+}
+
+
+
+
+
+#Espresso-card{
+
+text-align: center;
+border-radius: 13px;
+}
+
+
+
+
+
+#Feature{
+
+background-image:linear-gradient(to right, rgba(103, 50, 1, 0.767), rgba(67, 32, 13, 0.744));
+}
+
+
+#vidfeature{
+
+
+text-align: center;
+background-color: #61543471;
+background-image:linear-gradient(to right, #673201c4, rgba(67, 32, 13, 0.544));
+}
+
+
+#salestag{
+
+color: antiquewhite;
+font-size: xx-large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-top: 170px;
+
+}
+
+video {
+
+padding-bottom: 124px;
+
+
+}
+
+
+.card{
+width:auto;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 40px; /* Added */
+margin-top: 167px;
+padding: 0.16em;
+text-align: center;
+}
+
+
+img{
+
+text-align: center;
+
+}
+
+.card-title{
+margin-top: 4px;
+
+}
+
+
+#hero-text {
+
+
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+      text-shadow: 2px;
+  }
+
+
+
+
+
+  ul li
+  {
+
+text-decoration: none;
+text-align: center;
+
+  }
+
+
+.div{
+
+
+text-align: center;
+
+}
+
+
+.display-6{
+
+margin-top: 165px;
+
+
+}
+
+
+ .list-group-item-dark {
+
+
+color: black;
+  background-color: #b89e8a;
+}
+
+
+
+.Footer {
+
+text-align: center;
+background-color:  #884506c4;
+
+}
+
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container .col-4{
+    text-align: center;
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container .col-4{
+    text-align: center;
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+
+.icon{
+
+
+width: 25px;
+height: 25px;
+display: inline;
+
+}

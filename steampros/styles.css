@@ -1,0 +1,170 @@
+body {
+
+}
+
+.container-fluid {
+
+}
+
+.nav-link {
+  color: white;
+}
+
+.Navy {
+  background-color: #3D3A3A;
+}
+
+.Navy a {
+  color: black;
+}
+
+.Navy a:hover {
+  color: tan;
+}
+
+.dropdown-menu a:hover {
+  color: black;
+  background-color: #3D3A3A;
+}
+
+.col-6 {
+
+}
+
+.col-4 {
+
+
+}
+
+/**  This is the Footer **/
+.col-12-1 {
+  background-color: #7D7777;
+
+}
+
+.welcome {
+  text-align: center;
+}
+
+
+#TitleSection{
+
+
+
+
+
+}
+
+#NewsSection {
+
+
+
+
+
+
+}
+
+
+
+#News{
+font-size: 2em;
+  text-align: center;
+  color: black;
+  font-family: monospace;
+}
+
+
+
+
+
+
+
+
+#DedicationH {
+  text-align: center;
+}
+
+#ContactH {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#ServicesH {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#MoreinfoH {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#listgroup1 {
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-kerning: auto;
+}
+
+#listgroup1 a {
+  background-color: #555457;
+  color: white;
+}
+
+/**                             Group 2 - Services **/
+#listgroup2 {
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#listgroup2 a {
+  background-color: #555457;
+  color: rgb(255, 255, 255);
+}
+
+/**                End                   Group 2 - Services                        **/
+/**                           Group 3 - More Info                        **/
+#listgroup3 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#listgroup3 a {
+  background-color: #555457;
+  color: rgb(252, 252, 252);
+}
+
+
+
+/** Footer Styling ofSection Of The Page **/
+
+
+
+.button {
+  text-align: center;
+}
+
+#Footer {
+  background-color: #453E35;
+}
+
+
+.btn-primary-black {
+text-align: center;
+ color:black;
+  background-color:#555457; margin-top:20px;
+  margin-bottom: 20px;
+
+
+}
+
+
+/**                     End of      Group 3 - More Info                         **/
+/** #homepagebtn {
+  color: black;
+  border-radius: 8px 8px 5px 5px;
+  margin-top: 20px;
+  text-align: center;
+}**/
