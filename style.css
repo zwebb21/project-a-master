@@ -90,7 +90,10 @@ text-decoration: underline;
   color: rgb(102, 61, 27);
 }
 
-
+.Title2{
+font-size: x-large;
+  font-weight: 800;
+}
                                                                                   /* row formats */
 .row{
     padding:40px;
@@ -146,9 +149,22 @@ margin-top: 3.4rem;
 background-color:rgba(128, 128, 128, 0.194);
 padding: 22px;
 border-radius: 22px;  
+color: darkgrey;
 
 }
 
+
+#about-me-info-row:hover{
+  transition-delay: 10.93s; 
+  transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background-color:rgba(48, 47, 47, 0.194);
+}
+
+#about-me-info-row p{
+
+color: blueviolet;
+font-weight: 400;
+}
 .about-img{
 
 width: 1200px;
@@ -161,8 +177,11 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.615); /* Adjust values for horizontal of
 
     transform: translateY(10px); /* Move the card up by 5 pixels on hover */
     transition-delay: 0.3s; 
-    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     cursor: pointer;
+    background-color:rgba(52, 52, 52, 0.099);
+    box-shadow: 0px 4px 8px rgba(0, 0, 2, 0.118); /* Adjust values for horizontal offset, vertical offset, blur radius, and color */
+    border-radius: 24px;
 }
 
 
@@ -178,7 +197,11 @@ font-weight: 400;
 }
 
 
-
+#about-title{
+margin-top: 2.3rem;
+font-weight: 800;
+text-decoration: underline 2px solid;
+}
 
 
 .hero{
@@ -361,7 +384,7 @@ height: 420px;
 /* Websites Css styles */
 
 .about-paragraph-1 {
-width: 1200px;
+
 font-size: 1.08em;
 padding: 3rem;
 line-height: 5.2rem;
@@ -475,4 +498,26 @@ margin-bottom: 12.2rem;
 
 font-size: 1.12em;
 letter-spacing: 0.11em;
+}
+
+
+
+
+
+#Home-about-info{
+margin-top:4.2em;
+
+
+}
+
+
+/* Contact:email styling */
+.useremail {
+  
+  
+
+color: rgb(59, 59, 59) ;
+text-decoration: underline 2px ;
+text-underline-offset: 20px;
+text-underline-position:above;
 }
