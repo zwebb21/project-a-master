@@ -48,6 +48,11 @@ font-size: 32px;
 padding: 32px;
 letter-spacing: 0.032em;
 }
+
+
+
+
+
 .accordion-body{
 text-align: center;
 margin-top: 52px;
@@ -188,10 +193,15 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.615); /* Adjust values for horizontal of
                                                     /* hero  section */
 
 
+.hero-container{
+background-color: #4e5851;
+
+}
+
 
 #Projects-title{
 
-
+height: max-content;
 font-weight: 400;
 
 }
@@ -211,16 +221,20 @@ padding: 34px;
 
 }
 
+#hero-profile-pic {
+  /* Profile pic in the hero section */
+  width: 250px;      /* adjust to your preferred size */
+  height: 250px;     /* must be equal to width for a circle */
+  object-fit: cover; /* keeps image centered and not stretched */
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+  display: block;
+  margin: 0 auto;    /* centers image if needed */
 
-#hero-profile-pic{
-
-                                            /* the Profile pic in the hero section*/
-width: 1200px;
-float: none;
-border-radius: 84px;
-
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.455); /* Adjust values for horizontal offset, vertical offset, blur radius, and color */
 }
+
+
+
 
 .hero-title{
 /* herotitle paragraph here  */
@@ -285,7 +299,7 @@ transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 letter-spacing: 0.3rem;
 font-weight: 500;
 text-decoration: none;
-font-size: xx-large;
+font-size: medium;
 
 }
 .card-link-2{
@@ -520,4 +534,49 @@ color: rgb(59, 59, 59) ;
 text-decoration: underline 2px ;
 text-underline-offset: 20px;
 text-underline-position:above;
+}
+
+
+
+/* Adobe creadly certification  */
+
+
+
+
+.btn-credly{
+  margin-top: 3em;
+  background-color: rgb(60, 9, 25);
+  color: rgb(247, 18, 105);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+
+
+/* see more text */
+.see-more-btn {
+  background-color: #212222;   /* Bootstrap blue (you can change it) */
+  color: white;
+  border: none;
+  border-radius: 20px;         /* rounded pill shape */
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+/* Hover effect */
+.see-more-btn:hover {
+  background-color: #0056b3;   /* darker blue */
+  transform: translateY(-2px); /* subtle lift */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional active click effect */
+.see-more-btn:active {
+  transform: translateY(0); /* removes lift when pressed */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }

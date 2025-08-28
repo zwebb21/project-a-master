@@ -11,3 +11,6 @@ appealing web interfaces.
 /justwannalive.club/index.html
 
 i had to link the (links) to the other websites. by typing the web address not locally. i was having too many issues. 
+
+//class that adds the js to the card paragraph
+.project-desc 

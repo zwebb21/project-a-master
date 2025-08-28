@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" href="circle.css">
 </head>
 
 <body>
@@ -44,15 +44,12 @@
   <!-- end of navbar -->
 
 
-  <!-- Hero Section  -->
-
-  <div class="p-3">
-
-
+  <div class="hero-container p-4">
     <img id="hero-profile-pic" class="img-fluid mt-5" src="/img/zprofile-1.jpg" alt="">
+    <canvas id="orbitCanvas"></canvas>
   </div>
-
-
+  
+  
   <!-- image goes here  -->
   
 <div class="row">
@@ -131,13 +128,40 @@
     </div>
 
 <!-- end -->
-
-
-
-
-
-
   </div>
+
+
+<!-- creditials row.  -->
+<!-- Adobe Certification Section -->
+
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body text-center p-4">
+          <img src="https://1000logos.net/wp-content/uploads/2021/04/Adobe-logo.png" 
+               alt="Adobe Logo" 
+               class="mb-3" 
+               style="max-width:120px;">
+          
+          <h3 class="card-title-2 mb-3">Adobe Certified Professional in Print & Digital Media Publication Using Adobe InDesign</h3>
+          <p class="card-text text-muted">
+            Earned through <strong>Adobe Creative Cloud applications</strong>, showcasing expertise and industry-recognized skills. 
+          </p>
+
+<!-- ebed code -->
+<div data-iframe-width="auto" data-iframe-height="auto" data-share-badge-id="d6913589-d2ce-48e6-8745-80712f77d805" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+          <a href="https://www.credly.com/badges/d6913589-d2ce-48e6-8745-80712f77d805/embedded" target="_blank" class="btn btn-credly mt-3 px-4">
+            <i class="bi bi-patch-check-fill me-2"></i> Verify on Credly
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -160,7 +184,7 @@
         <div class="card-body">
           <h5 class="card-title">GRNZ PROJECT</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">Web Site</h6>
-          <p class="card-text">Here i created a site for a crypto token concept</p>
+          <p class="card-text">This idea was to practice Bootstrap 5 ,concept was a crypto token brand site</p>
           <a href="/project-a-master/GrnzProjectView.html" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
@@ -182,7 +206,7 @@
         <div class="card-body">
           <h5 class="card-title">Shaw Cupcakes</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
-          <p class="card-text">Here i created an ecommerce website for a local business concept.</p>
+          <p class="card-text">Here i created an ecommerce website for a local cupcake business .</p>
           <a href="https://www.justwannalive.club/Shaw-master/" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
@@ -206,7 +230,7 @@
           <h5 class="card-title">Daves Donuts</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">Landing Page - Food Truck</h6>
           <p class="card-text"> a landing page style for a mobile business.</p>
-          <a href="https://www.justwannalive.club/DavesDonuts /" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <a href="https://www.justwannalive.club//Daves Donuts /" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
           </svg>Project Overview</a>
@@ -235,13 +259,23 @@
       <div class="card mt-5" id="p-card" >
         <div class="card-body">
           <h5 class="card-title">Mars Rover _ Nasa APi  </h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Web Site</h6>
-          <p class="card-text">Landing Page for local coffe shop</p>
-          <a href="https://justwannalive.club/NasaApi/Nasa.html" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>View Site</a>
-          <span><br /></span>
+          <h6 class="card-subtitle mb-2 text-body-secondary">JavaScript Api Project</h6>
+          
+          <p class="project-desc small" id="">
+            A hands-on JavaScript project focused on learning how to work with APIs, implement fetch requests,
+            and apply asynchronous programming techniques. This project demonstrates my ability to connect
+            front-end applications with real-world data while strengthening my core JavaScript skills.
+          </p>
+          <button class="see-more-btn" id="">See more</button>
+          
+          <div class="div">
+            <a href="https://justwannalive.club/NasaApi/Nasa.html" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+              <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+            </svg>View Site</a>
+
+          </div>
+        
           <a href="https://github.com/zwebb21" class="card-link-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
           </svg>Github</a>
@@ -258,15 +292,25 @@
         <div class="card-body">
           <h5 class="card-title">Jalpeno</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">website - local business</h6>
-          <p class="card-text">Website for local restarunt with a rideshare carrier.</p>
-          <a href="https://justwannalive.club/Jalpeno/" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>View Site</a>
-          <span><br /></span>
+          <p class="small project-desc">
+            Created a fully reponsive website for a local restaurant with rideshare delivery integration. Implemented user-friendly navigation, menu showcase, and online ordering system. Focused on mobile optimization, accessibility, and modern web design best practices to enhance customer experience and drive online orders.
+          </p>
+          <button class="see-more-btn">See more</button>
+ <div class="">
+           
+  <a href="https://justwannalive.club/Jalpeno/" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+
+    
+  </svg>View Site</a>
+ </div>
+
           <a href="https://github.com/zwebb21" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
           </svg>Github</a>
+
+        
         </div>
       </div>
 
@@ -277,29 +321,45 @@
     
     
     <div class="col-lg-4">
-      <div class="card mt-5" id="p-card" >
+      <div class="card mt-5" id="p-card">
         <div class="card-body">
-          <h5 class="card-title">Dvd Reseller Site </h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Landing Page - Food Truck</h6>
-          <p class="card-text"> a landing page style for a mobile business.</p>
-          <a href="https://justwannalive.club/dvds/index.html"target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>View Site</a>
-          <span><br /></span>
-          <a href="https://github.com/zwebb21" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-          </svg>Github</a>
+          <h5 class="card-title">DVD Reseller Site</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce / Landing Page - Reselling Business</h6>
+          
+          <!-- Long description -->
+          <p class=" small project-desc">
+            Created a landing page and basic ecommerce site to resell valuable DVDs and cassettes discovered in my grandmother’s garage. The site showcases the collection, allows easy browsing, and highlights rare items to attract buyers.
+          </p>
+          
+          <!-- See More button -->
+          <button class="see-more-btn">See More</button>
+          
+          <!-- Links -->
+           <div class="">
+            <a href="https://justwannalive.club/dvds/index.html" target="_blank" class="card-link-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg> View Site
+            </a>
+
+           </div>
+     
+<div class="">
+
+          <a href="https://github.com/zwebb21" target="_blank" class="card-link-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+              <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/> 
+            </svg> Github
+          </a>
+
+
+</div>
+
         </div>
       </div>
-      
-      
-      
     </div>
-    
-    
   </div>
-  
   
   <!-- Truckfin  -->
   <div id="project-row" class="row">
@@ -312,13 +372,17 @@
 
 
     <div class="col-lg-4">
-<!-- Truckfin  -->
+<!-- Women Of Now. Internships -->
       <div class="card mt-2" id="p-card" >
         <div class="card-body">
           <h5 class="card-title">Women Of Now </h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
-          <p class="card-text">Here i created an ecommerce website for a local business concept.</p>
-          <a href="https://justwannalive.club/WomenOfNow/index.html" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <h6 class="card-subtitle mb-2 text-body-secondary">Local Community - Landing Page/College Internship</h6>
+          <p class="small project-desc" id="">
+            As part of my internship with Houston Community College (HCC), I collaborated directly with the CEO, head developer, and marketing team of a local organization to design and develop a landing page for their <strong>Women of Now</strong> Bible study program. The project focused on women’s empowerment and supporting women recovering from difficult circumstances, including those who have experienced homelessness. My role involved building a professional, user-focused website that communicated the organization’s mission while reinforcing their outreach and marketing efforts.
+          </p>
+          <button class="see-more-btn" id="">See more</button>
+          
+          <a href="https://justwannalive.club/WomenOfNow/index.html" class="card-link-1" target="_blank"     ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
           </svg>Project Overview</a>
@@ -333,41 +397,69 @@
     </div>
     <div class="col-lg-4">
 <!-- Truckfin  -->
-      <div class="card mt-2" id="p-card" >
-        <div class="card-body">
-          <h5 class="card-title">Mommy Fitness Hub </h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
-          <p class="card-text">Here i created an ecommerce website for a local business concept.</p>
-          <a href="https://justwannalive.club/momunityhub/index.html" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>Project Overview</a>
-          <span><br /></span>
-          <a href="https://github.com/zwebb21" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-          </svg>Github</a>
-        </div>
-      </div>
+<div class="card mt-2" id="p-card">
+  <div class="card-body">
+    <h5 class="card-title">Mommy Fitness Hub</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
+    
+    <!-- Long description -->
+    <p class="small project-desc">
+      Developed an ecommerce website for a local fitness business. The site features product listings, membership subscriptions, and fitness program packages. Focused on a clean, responsive design with easy navigation and seamless checkout experience for users.
+    </p>
+    
+    <!-- See More button -->
+    
+    <!-- Links -->
+    <a href="https://justwannalive.club/momunityhub/index.html" class="card-link-1" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+      </svg> View Site
+    </a>
+    <button class="see-more-btn">See More</button>
+    <br>
+    <a href="https://github.com/zwebb21" target="_blank" class="card-link-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+      </svg> Github
+    </a>
+  </div>
+</div>
 
 
     </div>
     <div class="col-lg-4">
-<!-- Truckfin  -->
-      <div class="card mt-2" id="p-card" >
+      <div class="card mt-2" id="p-card">
         <div class="card-body">
-          <h5 class="card-title">Day trading Course </h5>
+          <h5 class="card-title">Day Trading Course</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
-          <p class="card-text">Here i created a website to help teach people my experince in day trading finnacial markets.</p>
-          <a href="https://justwannalive.club/tradingcourse/test.html" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>Project Overview</a>
-          <span><br /></span>
-          <a href="https://github.com/zwebb21" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-          </svg>Github</a>
+          
+          <!-- Long description -->
+          <p class="small project-desc">
+            Created a website to teach people my experience in day trading financial markets. 
+            The site includes course modules, video tutorials, interactive examples, and user-friendly navigation 
+            to enhance the learning experience. Focused on accessibility, responsive design, and modern web development best practices.
+          </p>
+          
+          <!-- See More button -->
+          <button class="see-more-btn">See More</button>
+          
+          <!-- Links -->
+          <a href="https://justwannalive.club/tradingcourse/test.html" class="card-link-1" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+              <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+            </svg> Project Overview
+          </a>
+          <br>
+          <a href="https://github.com/zwebb21" target="_blank" class="card-link-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+              <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+            </svg> Github
+          </a>
         </div>
       </div>
+      
 
 
     </div>
@@ -435,6 +527,7 @@
 
 
   <script src="script.js"></script>
+  <script src="script2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
