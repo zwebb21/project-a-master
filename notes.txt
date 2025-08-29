@@ -14,3 +14,8 @@ i had to link the (links) to the other websites. by typing the web address not l
 
 //class that adds the js to the card paragraph
 .project-desc 
+
+
+august 27 2025 : 10 :30pm
+
+

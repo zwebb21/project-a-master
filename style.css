@@ -67,7 +67,7 @@ font-size:1.13em ;
 
 .accordion{
 
-/*  */
+/* accordion */
 
 width: 55%;
 padding: 5rem;
@@ -77,12 +77,13 @@ margin: auto;
 
 
 
-
+/* the body  */
 
 body {
 
 text-align: center;
 font-size: larger;
+background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 
@@ -112,11 +113,17 @@ flex-direction: row;
 }
 
 
-                                                                                  /* Navigation  */
+  
+.nav-item{
+color: rgb(21, 21, 21);
+font-weight: 800;
 
-.navbar {
+}/* Navigation  */
+
+.navbar{
     font-size: larger;
     text-align: center; /* Center align the text horizontally */
+  
   }
   
   .navbar ul {
@@ -131,11 +138,14 @@ flex-direction: row;
   
   .navbar a {
     text-decoration: none;
+    padding: 20px;
+    /* border: 0.5px solid rgba(37, 190, 210, 0.194); */
+    border-radius: 5px;
   }
   
   .navbar a:hover {
-    text-decoration:underline;
-    color: rgb(124, 61, 137);
+    text-decoration:underline 0.12px;
+    color: rgb(248, 106, 4);
   }
   
 
@@ -146,15 +156,20 @@ margin-bottom: 32rem;
 
 }
 
+#about-me-row{
+width: fit-content;
+margin: auto;
+}
+
 
   /* About Me Section  */
 
   #about-me-info-row{
 margin-top: 3.4rem;
-background-color:rgba(128, 128, 128, 0.194);
 padding: 22px;
 border-radius: 22px;  
-color: darkgrey;
+border: 1px solid rgba(0, 0, 0, 0.205);
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.205); /* Adjust values for horizontal offset, vertical offset, blur radius, and color */
 
 }
 
@@ -162,7 +177,7 @@ color: darkgrey;
 #about-me-info-row:hover{
   transition-delay: 10.93s; 
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  background-color:rgba(48, 47, 47, 0.194);
+  background-color:rgba(48, 47, 47, 0.027);
 }
 
 #about-me-info-row p{
@@ -179,12 +194,12 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.615); /* Adjust values for horizontal of
 
 
 #about-me-info-row .col-md-3:hover{
-
+    padding: 5px;
     transform: translateY(10px); /* Move the card up by 5 pixels on hover */
     transition-delay: 0.3s; 
     transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     cursor: pointer;
-    background-color:rgba(52, 52, 52, 0.099);
+    background-color:rgba(52, 52, 52, 0.051);
     box-shadow: 0px 4px 8px rgba(0, 0, 2, 0.118); /* Adjust values for horizontal offset, vertical offset, blur radius, and color */
     border-radius: 24px;
 }
@@ -193,10 +208,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.615); /* Adjust values for horizontal of
                                                     /* hero  section */
 
 
-.hero-container{
-background-color: #4e5851;
 
-}
 
 
 #Projects-title{

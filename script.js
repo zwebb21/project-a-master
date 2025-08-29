@@ -14,10 +14,10 @@ const centerY = canvas.height / 2;
 // 5 glowing rings settings
 const orbits = [
   { radius: 100, angle: 0, speed: 0.01, color: 'rgba(219, 156, 20, 0.2)', width: 2 },
-  { radius: 140, angle: Math.PI / 2, speed: 0.008, color: 'rgba(245, 216, 25, 0.92)', width: 2 },
-  { radius: 180, angle: Math.PI, speed: 0.006, color: 'rgba(217, 255, 0, 0.99)', width: 2 },
-  { radius: 220, angle: Math.PI / 4, speed: 0.004, color: 'rgba(255, 255, 0, 0.7)', width: 2 },
-  { radius: 260, angle: Math.PI / 3, speed: 0.003, color: 'rgba(140, 255, 0, 0.9)', width: 2 },
+  { radius: 140, angle: Math.PI / 2, speed: 0.008, color: 'rgba(28, 28, 28, 0.92)', width: 2 },
+  { radius: 180, angle: Math.PI, speed: 0.006, color: 'rgba(26, 26, 25, 0.99)', width: 2 },
+  { radius: 220, angle: Math.PI / 4, speed: 0.004, color: 'rgba(35, 35, 33, 0.7)', width: 2 },
+  { radius: 260, angle: Math.PI / 3, speed: 0.003, color: 'rgba(23, 23, 22, 0.9)', width: 2 },
 ];
 
 function animate() {

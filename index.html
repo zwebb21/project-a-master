@@ -7,33 +7,43 @@
   <title>Zarius- Developer Portfolio - Home </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="circle.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+<body class="container-fliud bg-dark text-light
+" id="body">
+  <nav class="navbar navbar-expand-lg bg-transparent ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">ZWeb - Devolper - Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <li class="nav-item">
+        <a class="navbar-brand" href="index.html">ZWeb - Devolper - Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </li>
       <div class="collapse navbar-collapse" id="navbarNav">
         <br />
-        <ul class="navbar-nav">
-          <a class="nav-link " aria-current="page" href="index.html">Home</a>
-          <li class="nav-item">
+
+        <li class="nav-item">
+
+
+          <ul class="navbar-nav">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            <li class="nav-item">
+        </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/project-a-master/about.html">About</a>
+            <a class="nav-link" href="/about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#project-row">Projects</a>
           </li>
-
-
-
           <li class="nav-item">
             <a class="nav-link" href="index.html#Contact-Form">Contact</a>
           </li>
@@ -58,12 +68,12 @@
 <div class="col-lg-12">
 
 
-  <div class=" mb-5 " id="Home-about-info">
+  <div class=" mb-5 text-dark fs-5 fw-semibold" id="Home-about-info">
   
     <h4 class="Title2">Front-End Specialist</h4>
-    <h3>Junior- Web Developer</h3>
-  
-    <p>Im a inspiring entrenpernuer learning front-end web Development.
+    <h5 class="text-darK">Junior- Web Developer</h3>
+  <br />
+    <p>Im an inspiring entrenpernuer learning front-end web Development.
     </p>
     <p>Being a diverse creator allows me to leverage multiple arts with technologies. Bringing creative value to my
       teams and projects</p>
@@ -135,32 +145,71 @@
 <!-- Adobe Certification Section -->
 
 
-<div class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="card shadow-lg border-0 rounded-4">
-        <div class="card-body text-center p-4">
-          <img src="https://1000logos.net/wp-content/uploads/2021/04/Adobe-logo.png" 
-               alt="Adobe Logo" 
-               class="mb-3" 
-               style="max-width:120px;">
-          
-          <h3 class="card-title-2 mb-3">Adobe Certified Professional in Print & Digital Media Publication Using Adobe InDesign</h3>
-          <p class="card-text text-muted">
-            Earned through <strong>Adobe Creative Cloud applications</strong>, showcasing expertise and industry-recognized skills. 
-          </p>
 
-<!-- ebed code -->
-<div data-iframe-width="auto" data-iframe-height="auto" data-share-badge-id="d6913589-d2ce-48e6-8745-80712f77d805" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
-          <a href="https://www.credly.com/badges/d6913589-d2ce-48e6-8745-80712f77d805/embedded" target="_blank" class="btn btn-credly mt-3 px-4">
-            <i class="bi bi-patch-check-fill me-2"></i> Verify on Credly
-          </a>
+
+<!-- modal here -->
+
+<!-- Trigger Button -->
+<button type="button" class="btn btn-outline-primary px-4" data-bs-toggle="modal" data-bs-target="#adobeModal">
+  <i class="bi bi-award me-2"></i> View Certification
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="adobeModal" tabindex="-1" aria-labelledby="adobeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- wider modal -->
+    <div class="modal-content bg-transparent border-0">
+      
+      <div class="container-fluid bg-white my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10"> <!-- slightly wider column -->
+            <div class="card shadow-lg border-1 rounded-4 bg-transparent">
+              <div class="card-body text-center p-4">
+                
+                <!-- Logo -->
+                <img src="https://1000logos.net/wp-content/uploads/2021/04/Adobe-logo.png" 
+                     alt="Adobe Logo" 
+                     class="img-fluid mb-3" 
+                     style="max-width: 250px; height: auto;"> <!-- responsive -->
+                
+                <!-- Title -->
+                <h3 id="adobeModalLabel" class="card-title text-dark mb-3 fs-4">
+                  Adobe Certified Professional in Print & Digital Media Publication Using Adobe InDesign
+                </h3>
+                
+                <!-- Description -->
+                <p class="card-text text-muted mt-4 mb-5 fs-6">
+                  Earned through <strong>Adobe Creative Cloud applications</strong>, showcasing expertise and industry-recognized skills. 
+                </p>
+                
+                <!-- Credly Embed (Responsive Wrapper) -->
+                <div class="embed-responsive" style="max-width: 100%; overflow-x: auto;">
+                  <div data-iframe-width="100%" 
+                       data-iframe-height="auto" 
+                       data-share-badge-id="d6913589-d2ce-48e6-8745-80712f77d805" 
+                       data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                
+                <!-- Verify Button -->
+                <a href="https://www.credly.com/badges/d6913589-d2ce-48e6-8745-80712f77d805/embedded" 
+                   target="_blank" 
+                   class="btn btn-primary mt-3 px-4">
+                  <i class="bi bi-patch-check-fill me-2"></i> Verify on Credly
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
   </div>
 </div>
+
+
+<!-- modal end here  -->
+
 
 
 
@@ -171,21 +220,20 @@
   <!-- Projects row  -->
   <div id="project-row" class="row">
 
-    <h2 class="display-4" id="Projects-title">
+    <h2 class="display-4 text-dark" id="Projects-title">
 
       Projects
 
     </h2>
 
-
+<!-- Grnz Project -->
 <div class="col-lg-4">
-
       <div class="card mt-5" id="p-card" >
         <div class="card-body">
           <h5 class="card-title">GRNZ PROJECT</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">Web Site</h6>
           <p class="card-text">This idea was to practice Bootstrap 5 ,concept was a crypto token brand site</p>
-          <a href="/project-a-master/GrnzProjectView.html" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <a href="GRNZ/indexboot.html" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
           </svg>Project Overview</a>
@@ -489,7 +537,7 @@
     Contact
   </h2>
 
-  <h3 class="useremail display-5 mb-5 p-4">zariuswebdev@gmail.com</h3>
+  <h3 class="useremail display-5 mb-5 p-4 text-light">zariuswebdev@gmail.com</h3>
 
   <!-- start of form -->
   <form action="https://formspree.io/f/xzzzknjn" method="POST" style="width: 100%;">
