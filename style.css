@@ -1,3 +1,6 @@
+
+
+
 .container-fluid{
 
   width: auto;
@@ -74,7 +77,7 @@ padding: 5rem;
 text-align: center;
 margin: auto;
 }
-
+z
 
 
 /* the body  */
@@ -83,7 +86,6 @@ body {
 
 text-align: center;
 font-size: larger;
-background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 
@@ -101,16 +103,6 @@ font-size: x-large;
   font-weight: 800;
 }
                                                                                   /* row formats */
-.row{
-    padding:40px;
-flex-wrap: wrap;
-flex: auto;
-justify-content: space-around;
-justify-content: space-between;
-flex-direction: row;
-
-
-}
 
 
   

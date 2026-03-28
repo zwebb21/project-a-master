@@ -18,6 +18,9 @@ i had to link the (links) to the other websites. by typing the web address not l
 
 august 27 2025 : 10 :30pm
 
+
+
+
 september 2 2025 - 10:00pm 
 notes to self are: 
 
@@ -25,3 +28,8 @@ notes to self are:
 2.  10:23pm 
 finished these new changes. 
 1.fixed the see more btn /with an updated script2.js file.
+
+
+
+september 5th 2025: 
+fixinging the about page. 
