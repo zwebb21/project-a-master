@@ -7,33 +7,39 @@
   <title>Zarius- Developer Portfolio - Home </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="/project-a-master/style.css">
   
+    <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/circle.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+<body class="container-fluid text-dark" id="body">
+  <nav class="navbar navbar-expand-lg bg-transparent ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/project-a-master/index.html">Dev - Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <li class="nav-item">
+        <a class="navbar-brand" href="index.html">Zarius -Web Devolper - Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </li>
       <div class="collapse navbar-collapse" id="navbarNav">
         <br />
-        <ul class="navbar-nav">
-          <a class="nav-link " aria-current="page" href="/project-a-master/index.html">Home</a>
-          <li class="nav-item">
+
+        <li class="nav-item">
+
+
+          <ul class="navbar-nav">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            <li class="nav-item">
+        </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/project-a-master/about.html">About</a>
+            <a class="nav-link" href="/about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#project-row">Projects</a>
           </li>
-
-
-
           <li class="nav-item">
             <a class="nav-link" href="index.html#Contact-Form">Contact</a>
           </li>
@@ -44,61 +50,78 @@
   <!-- end of navbar -->
 
 
-  <!-- Hero Section  -->
+  <div class="hero-container p-4">
+    <img id="hero-profile-pic" class="img-fluid mt-5" src="/img/zprofile-1.jpg" alt="">
+    <canvas id="orbitCanvas"></canvas>
+  </div>
+  
+  
+  <!-- image goes here  -->
+  
+<div class="row">
+<div class="col-lg-12 text-center" id="home-about-info">
+  <div class=" mb-5 text-dark fs-5 fw-semibold" id="Home-about-info">
 
-  <div class="row">
+    <h4 class="Title2">Front-End Specialist</h4>
+    <h5 class="text-darK">Junior- Web Developer</h3>
+  <br />
+    <p>Im an inspiring entrenpernuer learning front-end web Development.
+    </p>
+    <p>Being a diverse creator allows me to leverage multiple arts with technologies. Bringing creative value to my
+      teams and projects</p>
+    </p>
+    <p>
+      Open to studying and working on open source code and open source projects.
+    </p>
+  
+  </div>
+
+</div>
+
+</div>
+  <!-- end of home about info. -->
 
 
 
 
-    <!-- image goes here  -->
-
-    <div class="hero">
-
-      <div class="hero-title">
-
-        <h4>Front-End Specialist</h4>
-        <h3>Junior- Web Developer</h3>
-
-        <p>Im a inspiring entrenpernuer learning front-end web Development.
-        </p>
-        <p>Being a diverse creator allows me to leverage multiple arts with technologies. Bringing creative value to my
-          teams and projects</p>
-        </p>
-        <p>
-          Open to studying and working on open source code and open source projects.
-        </p>
-
-      </div>
-      <img id="hero-profile-pic" class="img-fluid" src="/project-a-master/img/zprofile-1.jpg" alt="">
 
 
-    </div>
+  
+  
+
+
+
+
 
   </div>
 
+
+
+
+
+
   <!-- about me row  -->
-  <div class="row mt-4" id="about-me-row">
+  <div class="row mt-4 text-center" id="about-me-row">
 
     <h5><a href="about.html">- More about me -</a></h5>
 
 
-    <div class="row p-4" id="about-me-info-row">
+    <div class="row p-4 text-center" id="about-me-info-row">
 
-      <div class="col-md-3">
-        <h3>Front End - Development</h3>
+      <div class="col-lg-4">
+        <h3 class="Title2">Front End - Development</h3>
         <p>Exp 1-5yrs</p>
 
       </div>
 
-      <div class="col-md-3">
-        <h3>FilmEditor/Motion Graphics</h3>
+      <div class="col-lg-4">
+        <h3 class="Title2">FilmEditor/Motion Graphics</h3>
         <p>Exp 10+ yrs</p>
 
       </div>
 
-      <div class="col-md-3">
-        <h3>Music Producer,Artist,
+      <div class="col-lg-4">
+        <h3 class="Title2">Music Producer,Artist,
           and Engineer
         </h3>
         <p>Exp 10+ yrs</p>
@@ -107,44 +130,118 @@
     </div>
 
 <!-- end -->
-
-
-
-
-
-
   </div>
 
 
+<!-- creditials row.  -->
+<!-- Adobe Certification Section -->
 
 
 
 
-  <!-- Projects row  -->
+
+<!-- modal here -->
+<div class="text-center my-5">
+
+
+  <button type="button" class="btn btn-outline-primary px-4" data-bs-toggle="modal" data-bs-target="#adobeModal">
+    <i class="bi bi-award me-2"></i> View Certification
+  </button>
+
+  <!-- Trigger Button -->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="adobeModal" tabindex="-1" aria-labelledby="adobeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- wider modal -->
+    <div class="modal-content bg-transparent border-0">
+      
+      <div class="container-fluid bg-white my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10"> <!-- slightly wider column -->
+            <div class="card shadow-lg border-1 rounded-4 bg-transparent">
+              <div class="card-body text-center p-4">
+                
+                <!-- Logo -->
+                <img src="https://1000logos.net/wp-content/uploads/2021/04/Adobe-logo.png" 
+                     alt="Adobe Logo" 
+                     class="img-fluid mb-3" 
+                     style="max-width: 250px; height: auto;"> <!-- responsive -->
+                
+                <!-- Title -->
+                <h3 id="adobeModalLabel" class="card-title text-dark mb-3 fs-4">
+                  Adobe Certified Professional in Print & Digital Media Publication Using Adobe InDesign
+                </h3>
+                
+                <!-- Description -->
+                <p class="card-text text-muted mt-4 mb-5 fs-6">
+                  Earned through <strong>Adobe Creative Cloud applications</strong>, showcasing expertise and industry-recognized skills. 
+                </p>
+                
+                <!-- Credly Embed (Responsive Wrapper) -->
+                <div class="embed-responsive" style="max-width: 100%; overflow-x: auto;">
+                  <div data-iframe-width="100%" 
+                       data-iframe-height="auto" 
+                       data-share-badge-id="d6913589-d2ce-48e6-8745-80712f77d805" 
+                       data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                
+                <!-- Verify Button -->
+                <a href="https://www.credly.com/badges/d6913589-d2ce-48e6-8745-80712f77d805/embedded" 
+                   target="_blank" 
+                   class="btn btn-primary mt-3 px-4">
+                  <i class="bi bi-patch-check-fill me-2"></i> Verify on Credly
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- modal end here  -->
+
+
+
+
+
+
+
+
+  <!-- Projects row 
+   
+  This section is for showcasing various projects with cards. Each card contains a title, subtitle, description, and links to view the project and its GitHub repository.
+
+  
+  -->
   <div id="project-row" class="row">
 
-    <h2 class="display-4" id="Projects-title">
+    <h2 class="display-4 text-dark" id="Projects-title">
 
       Projects
 
     </h2>
 
-
+<!-- Grnz Project -->
 <div class="col-lg-4">
-
       <div class="card mt-5" id="p-card" >
         <div class="card-body">
           <h5 class="card-title">GRNZ PROJECT</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">Web Site</h6>
-          <p class="card-text">Here i created a site for a crypto token concept</p>
-          <a href="/project-a-master/GrnzProjectView.html" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <p class=" small project-desc">This idea was to practice Bootstrap 5 ,concept was a crypto token brand site.</p>
+          <a href="GRNZ/indexboot.html" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>Project Overview</a>
+          </svg>View Site</a>
+          
           <span><br /></span>
-          <a href="https://github.com/zwebb21" class="card-link-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-          </svg>Github</a>
+
+          <button class="see-more-btn" id="">See more</button>
         </div>
       </div>
 
@@ -158,13 +255,15 @@
         <div class="card-body">
           <h5 class="card-title">Shaw Cupcakes</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
-          <p class="card-text">Here i created an ecommerce website for a local business concept.</p>
-          <a href="https://zwebb21.github.io/shaw/index.html" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <p class="  project-desc small">Here i created an ecommerce website for a local cupcake business .</p>
+          <a href="https://zweeb21.github.io/shaw/index.html" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>Project Overview</a>
+        
+          </svg>View Site</a>
           <span><br /></span>
-          <a href="https://github.com/zwebb21" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+          <a href="https://github.com/zwebb21/shaw" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
           </svg>Github</a>
         </div>
@@ -182,12 +281,12 @@
           <h5 class="card-title">Daves Donuts</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">Landing Page - Food Truck</h6>
           <p class="card-text"> a landing page style for a mobile business.</p>
-          <a href="https://www.justwannalive.club/DavesDonuts /" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <a href="https://www.justwannalive.club//Daves Donuts /" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>Project Overview</a>
+          </svg>View Site</a>
           <span><br /></span>
-          <a href="https://github.com/zwebb21" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+          <a href="https://github.com/zwebb21/Daves-Donuts" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
           </svg>Github</a>
         </div>
@@ -210,17 +309,32 @@
       
       <div class="card mt-5" id="p-card" >
         <div class="card-body">
-          <h5 class="card-title">Steam Pro's</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Web Site</h6>
-          <p class="card-text">Landing Page for local coffe shop</p>
-          <a href="https://justwannalive.club/Final/" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>View Site</a>
-          <span><br /></span>
+          <h5 class="card-title">Mars Rover _ Nasa APi  </h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">JavaScript Api Project</h6>
+          
+          <p class="small  project-desc" id="">
+            A hands-on JavaScript project focused on learning how to work with APIs, implement fetch requests,
+            and apply asynchronous programming techniques. This project demonstrates my ability to connect
+            front-end applications with real-world data while strengthening my core JavaScript skills.
+          </p>
+          <!--see more btn   -->
+
+
+          
+          <!--  -->
+          
+          <div class="div">
+            <a href="https://justwannalive.club/NasaApi/Nasa.html" class="card-link-1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+              <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+            </svg>View Site</a>
+            
+          </div>
+          
           <a href="https://github.com/zwebb21" class="card-link-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-          </svg>Github</a>
+          </svg>Github</a><br/>
+          <button class="see-more-btn">See More</button>
         </div>
       </div>
 
@@ -234,16 +348,31 @@
         <div class="card-body">
           <h5 class="card-title">Jalpeno</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">website - local business</h6>
-          <p class="card-text">Website for local restarunt with a rideshare carrier.</p>
-          <a href="https://justwannalive.club/Jalpeno/" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>View Site</a>
-          <span><br /></span>
-          <a href="https://github.com/zwebb21" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-          </svg>Github</a>
-        </div>
+          <p class="small project-desc">
+            Created a fully reponsive website for a local restaurant with rideshare delivery integration. Implemented user-friendly navigation, menu showcase, and online ordering system. Focused on mobile optimization, accessibility, and modern web design best practices to enhance customer experience and drive online orders.
+          </p>
+
+<br />
+<!-- see more btn jalpeno -->
+
+
+<div class="">
+  
+  <a href="https://justwannalive.club/Jalpeno/" target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+    
+    
+  </svg>View Site</a>
+</div>
+
+<a href="https://github.com/zwebb21" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+</svg>Github</a>
+
+<br />
+<button class="see-more-btn">See More</button>
+</div>
       </div>
 
       
@@ -253,31 +382,46 @@
     
     
     <div class="col-lg-4">
-      <div class="card mt-5" id="p-card" >
+      <div class="card mt-5" id="p-card">
         <div class="card-body">
-          <h5 class="card-title">Lemonade Stand</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Landing Page - Food Truck</h6>
-          <p class="card-text"> a landing page style for a mobile business.</p>
-          <a href="https://justwannalive.club/Lemonade-Stand/"target="_blank" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>View Site</a>
-          <span><br /></span>
-          <a href="https://github.com/zwebb21" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-          </svg>Github</a>
+          <h5 class="card-title">DVD Reseller Site</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce / Landing Page - Reselling Business</h6>
+          
+          <!-- Long description -->
+          <p class=" small project-desc">
+            Created a landing page and basic ecommerce site to resell valuable DVDs and cassettes discovered in my grandmother’s garage. The site showcases the collection, allows easy browsing, and highlights rare items to attract buyers.
+          </p>
+          
+          <!-- See More button -->
+          <!-- Links -->
+          <div class="">
+            <a href="https://justwannalive.club/dvds/index.html" target="_blank" class="card-link-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+              </svg> View Site
+            </a>
+            
+          </div>
+          
+          <div class="">
+            
+            <a href="https://github.com/zwebb21" target="_blank" class="card-link-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/> 
+              </svg> Github
+            </a>
+            <button class="see-more-btn">See More</button>
+
+
+</div>
+
         </div>
       </div>
-      
-      
-      
     </div>
-    
-    
   </div>
   
   
-  <!-- Truckfin  -->
   <div id="project-row" class="row">
 <!-- Truckfin  -->
     <h2 class="display-4" id="Projects-title">
@@ -287,29 +431,106 @@
     </h2>
 
 
-    <div class="col-lg-12">
-<!-- Truckfin  -->
-      <div class="card mt-5" id="p-card" >
+    <div class="col-lg-4">
+<!-- Women Of Now. Internships -->
+      <div class="card mt-2" id="p-card" >
         <div class="card-body">
-          <h5 class="card-title">Truckfin</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
-          <p class="card-text">Here i created an ecommerce website for a local business concept.</p>
-          <a href="https://justwannalive.club/Truckfin/" class="card-link-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <h5 class="card-title">Women Of Now </h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Local Community - Landing Page/College Internship</h6>
+          <p class="small project-desc" id="">
+            As part of my internship with Houston Community College (HCC), I collaborated directly with the CEO, head developer, and marketing team of a local organization to design and develop a landing page for their <strong>Women of Now</strong> Bible study program. The project focused on women’s empowerment and supporting women recovering from difficult circumstances, including those who have experienced homelessness. My role involved building a professional, user-focused website that communicated the organization’s mission while reinforcing their outreach and marketing efforts.
+          </p>
+          
+          <a href="https://justwannalive.club/WomenOfNow/index.html" class="card-link-1" target="_blank"     ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-          </svg>Project Overview</a>
+          </svg>View Site</a>
           <span><br /></span>
           <a href="https://github.com/zwebb21" target="_blank" class="card-link-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
           </svg>Github</a>
+          <!-- see more btn -women -->
+          <br />
+          <button class="see-more-btn" id="">See more</button>
         </div>
       </div>
+
+
+    </div>
+    <div class="col-lg-4">
+<!-- Truckfin  -->
+<div class="card mt-2" id="p-card">
+  <div class="card-body">
+    <h5 class="card-title">Mommy Fitness Hub</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
+    
+    <!-- Long description -->
+    <p class="small project-desc">
+      Developed an ecommerce website for a local fitness business. The site features product listings, membership subscriptions, and fitness program packages. Focused on 
+    </p>
+    
+    <!-- See More button -->
+    
+    <!-- Links -->
+    <a href="https://justwannalive.club/momunityhub/index.html" class="card-link-1" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+      </svg> View Site
+    </a>
+
+    <br>
+    <a href="https://github.com/zwebb21" target="_blank" class="card-link-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+      </svg> Github
+    </a>
+    <button class="see-more-btn">See More</button>
+  </div>
+</div>
+
+
+    </div>
+    <div class="col-lg-4">
+      <div class="card mt-2" id="p-card">
+        <div class="card-body">
+          <h5 class="card-title">Day Trading Course</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Ecommerce website - local business</h6>
+          
+          <!-- Long description -->
+          <p class="small project-desc">
+            Created a website to teach people my experience in day trading financial markets. 
+            The site includes course modules, video tutorials, interactive examples, and user-friendly navigation 
+            to enhance the learning experience. Focused on accessibility, responsive design, and modern web development best practices.
+          </p>
+          
+          <!-- See More button -->
+          
+          <!-- Links -->
+          <a href="https://justwannalive.club/tradingcourse/test.html" class="card-link-1" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+              <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+            </svg> View Site
+          </a>
+          <br>
+          <a href="https://github.com/zwebb21" target="_blank" class="card-link-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+              <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+            </svg> Github
+          </a>
+          <br />
+          <button class="see-more-btn">See More</button>
+        </div>
+      </div>
+      
 
 
     </div>
 
   </div>
   
+  <!-- End of Projects Row  -->
   
   
   
@@ -317,33 +538,48 @@
   
   
   
-  
 
 
 
 
-  <!-- Contact -->
-  <div class="row" id="Contact-Form">
+<!-- Contact -->
+<div class="row text-center" id="Contact-Form" style="max-width: 400px; margin: auto; padding: 20px; min-width: fit-content;">
 
- <h2 class="display-3" id="Contact-Title">   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-arrow-down" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
-  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708z"/>
-</svg>Contact</h3>
+  <h2 class="display-3" id="Contact-Title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-arrow-down" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+      <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708z"/>
+    </svg>
+    Contact
+  </h2>
 
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
+  <h3 class="useremail display-5 mb-5 p-4 text-dark">zariuswebdev@gmail.com</h3>
 
+  <!-- start of form -->
+  <form action="https://formspree.io/f/xzzzknjn" method="POST" style="width: 100%;">
+    <input type="hidden" name="_next" value="https://justwannalive.club/thank-you.html" />
 
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </form>
+    <div class="form-group">
+      <label class="mb-3" for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required style="width: 100%; padding: 10px;"/>
+    </div>
 
+    <div class="form-group">
+      <label for="email" class="p-2">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="youremail@example.com" name="email" required style="width: 100%; padding: 10px;" />
+    </div>
 
+    <div class="form-group">
+      <label class="p-3" for="message">Message</label>
+      <textarea class="form-control" id="message" placeholder="Write to me here..." rows="8" name="message" required style="width: 100%; padding: 10px;"></textarea>
+    </div>
+
+    <div class="p-3">
+      <button class="btn btn-primary" type="submit" style="width: 100%;">Submit</button>
+    </div>
+  </form>
+  <!-- form ends here -->
+</div>
 
 
 
@@ -355,9 +591,14 @@
 
 
   <script src="script.js"></script>
+  <script src="script2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 
 </html>
