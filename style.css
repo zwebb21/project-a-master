@@ -135,10 +135,18 @@ font-weight: 800;
     border-radius: 5px;
   }
   
-  .navbar a:hover {
+.navbar a:hover {
     text-decoration:underline 0.12px;
     color: rgb(248, 106, 4);
   }
+
+.hero-action-group{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
   
 
 .About-Content{
@@ -528,6 +536,46 @@ margin-top:4.2em;
 
 }
 
+#skills-section{
+  margin-top: 5rem;
+}
+
+.skills-shell{
+  background-color: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.skills-intro{
+  max-width: 760px;
+  margin: 0 auto 1.5rem;
+}
+
+.stack-chip-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.stack-chip{
+  background-color: rgb(88, 97, 107);
+  color: white;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.cert-card{
+  background-color: rgba(88, 97, 107, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(88, 97, 107, 0.18);
+}
+
 
 /* Contact:email styling */
 .useremail {
@@ -538,6 +586,20 @@ color: rgb(59, 59, 59) ;
 text-decoration: underline 2px ;
 text-underline-offset: 20px;
 text-underline-position:above;
+}
+
+.contact-meta{
+  font-size: 1.05rem;
+}
+
+.contact-inline-link{
+  color: rgb(41, 74, 120);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-inline-link:hover{
+  text-decoration: underline;
 }
 
 
@@ -583,4 +645,27 @@ text-underline-position:above;
 .see-more-btn:active {
   transform: translateY(0); /* removes lift when pressed */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  #project-row,.col-md-4{
+    padding: 24px;
+  }
+
+  .skills-shell{
+    padding: 1.5rem;
+  }
+
+  form{
+    padding: 24px;
+  }
+
+  .form-control{
+    width: 100%;
+  }
+
+  .bi-envelope-arrow-down{
+    width: 120px;
+    height: 120px;
+  }
 }
