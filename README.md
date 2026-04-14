@@ -22,4 +22,4 @@ Projects will be added and updated here.
 🚧 Currently in progress
 
 ## Contact
-More info coming soon.
+zariuswebdev@gmail.com
