@@ -281,7 +281,7 @@ color: black;
 
 
 
-#project-row,.col-md-4{
+.project-row,.col-md-4{
   width:fit-content;/* Fit content centerd the cards into the middle on the wider vp*/
   
   margin-top: 22px;
@@ -299,7 +299,7 @@ padding: 124px;
 
                }                                                           /* Projects */
                                                                           
-#p-card{
+.p-card{
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*Drop shadow*/
 background-color:rgb(88, 97, 107);
@@ -648,7 +648,7 @@ text-underline-position:above;
 }
 
 @media (max-width: 768px) {
-  #project-row,.col-md-4{
+  .project-row,.col-md-4{
     padding: 24px;
   }
 
