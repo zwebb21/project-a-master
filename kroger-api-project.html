@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kroger Budget Grocery Planner - Project Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #059669;
+            --accent-color: #f59e0b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .project-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 20px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .project-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .screenshot-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .screenshot-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .screenshot-placeholder {
+            background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .screenshot-label {
+            padding: 15px;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .tech-stack-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .tech-stack-item:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 5px;
+        }
+        
+        .btn-primary-custom {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            border: none;
+        }
+        
+        .btn-primary-custom:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .btn-secondary-custom {
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-secondary-custom:hover {
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+        
+        .reason-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            margin: 40px 0;
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .reason-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .reason-text {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+            font-size: 1.05rem;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .text-center-custom {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-custom">
+        <!-- Header Section -->
+        <div class="project-header text-center-custom">
+            <h1 class="project-title">🛒 Kroger Budget Grocery Planner</h1>
+            <p class="project-subtitle">Search, Plan & Budget Your Grocery Shopping</p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="text-center-custom mb-5" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <a href="https://kroger-budget-grocery-planner.onrender.com" class="btn-primary-custom" target="_blank">
+                🚀 View Live Demo
+            </a>
+            <a href="https://github.com/zwebb21/Portfolio" class="btn-secondary-custom" target="_blank">
+                💻 GitHub Repository
+            </a>
+        </div>
+        
+        <!-- Screenshots Section -->
+        <div class="my-5">
+            <h2 class="text-3xl font-bold text-white mb-5 text-center-custom">Project Showcase</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">
+                        📍 Store Location Search
+                    </div>
+                    <div class="screenshot-label">Screenshot 1: Find Stores by ZIP Code</div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-placeholder">
+                        🛍️ Product & Budget List
+                    </div>
+                    <div class="screenshot-label">Screenshot 2: Search & Build Grocery List</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About Section -->
+        <div class="reason-section">
+            <h2 class="reason-title">📌 About This Project</h2>
+            <p class="reason-text">
+                This full-stack application demonstrates the power of integrating third-party APIs with a modern web application. 
+                It allows users to search for Kroger stores by location, browse products, and build personalized grocery lists 
+                with real-time cost estimates.
+            </p>
+        </div>
+        
+        <!-- Why This Project Section -->
+        <div class="reason-section">
+            <h2 class="reason-title">💡 Why I Built This Project</h2>
+            <p class="reason-text">
+                I wanted to challenge myself by learning something entirely new with APIs. My goal was to understand how to:
+            </p>
+            <ul class="feature-list" style="margin-top: 20px;">
+                <li><strong>Fetch and parse JSON data</strong> from third-party APIs like Kroger's Public API</li>
+                <li><strong>Clean and transform messy API responses</strong> into user-friendly data for the frontend</li>
+                <li><strong>Protect sensitive information</strong> using environment variables and .gitignore files</li>
+                <li><strong>Implement OAuth 2.0 authentication</strong> for secure API access</li>
+                <li><strong>Build a full-stack application</strong> with a backend server handling API requests</li>
+            </ul>
+            <p class="reason-text" style="margin-top: 25px;">
+                <strong>Key Learning:</strong> One of the most important lessons was understanding the critical importance of <span style="background: #fef3c7; padding: 2px 6px; border-radius: 3px;">not uploading API keys to repositories</span>. 
+                Using .env files and .gitignore is essential for security and protecting credentials from exposure.
+            </p>
+        </div>
+        
+        <!-- Features Section -->
+        <div class="my-5">
+            <h2 class="text-3xl font-bold text-white mb-5 text-center-custom">✨ Features</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <ul class="feature-list">
+                        <li>Search Kroger stores by ZIP code</li>
+                        <li>Select specific store locations</li>
+                        <li>Search products by keyword</li>
+                        <li>View detailed product information</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <ul class="feature-list">
+                        <li>Add products to grocery list</li>
+                        <li>Calculate estimated grocery total</li>
+                        <li>Save grocery lists using localStorage</li>
+                        <li>Responsive design for all devices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tech Stack Section -->
+        <div class="my-5">
+            <h2 class="text-3xl font-bold text-white mb-5 text-center-custom">🛠️ Tech Stack</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="tech-stack-item">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">📄 HTML</h3>
+                        <p style="color: #666; margin: 0;">Semantic markup & page structure</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="tech-stack-item">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🎨 CSS</h3>
+                        <p style="color: #666; margin: 0;">Responsive styling & animations</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="tech-stack-item">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">⚡ JavaScript</h3>
+                        <p style="color: #666; margin: 0;">Dynamic interactions & DOM manipulation</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="tech-stack-item">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🔌 API</h3>
+                        <p style="color: #666; margin: 0;">Kroger Public API & REST calls</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="tech-stack-item">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🚀 Node.js</h3>
+                        <p style="color: #666; margin: 0;">Server runtime environment</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="tech-stack-item">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">⚙️ Express</h3>
+                        <p style="color: #666; margin: 0;">Backend web framework</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="tech-stack-item">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🔐 OAuth 2.0</h3>
+                        <p style="color: #666; margin: 0;">Secure authentication</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="tech-stack-item">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">☁️ Render</h3>
+                        <p style="color: #666; margin: 0;">Cloud deployment platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- App Flow Section -->
+        <div class="reason-section">
+            <h2 class="reason-title">🔄 How It Works</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ol style="color: #555; line-height: 2;">
+                        <li><strong>User enters a ZIP code</strong></li>
+                        <li><strong>Frontend calls the /locations route</strong></li>
+                        <li><strong>Backend gets a Kroger OAuth token</strong></li>
+                        <li><strong>Backend requests nearby Kroger stores</strong></li>
+                        <li><strong>User selects a store</strong></li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <ol style="color: #555; line-height: 2; start: 6;">
+                        <li><strong>User searches for a product</strong></li>
+                        <li><strong>Frontend calls the /products-simple route</strong></li>
+                        <li><strong>Backend gets Kroger product data and cleans the response</strong></li>
+                        <li><strong>Frontend displays product cards</strong></li>
+                        <li><strong>User adds products and sees estimated total</strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <!-- What I Learned Section -->
+        <div class="my-5">
+            <h2 class="text-3xl font-bold text-white mb-5 text-center-custom">📚 What I Learned</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <ul class="feature-list">
+                        <li>Protecting API credentials using .env files</li>
+                        <li>Creating backend routes with Express</li>
+                        <li>How OAuth client credentials flow works</li>
+                        <li>Fetching data from third-party APIs</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <ul class="feature-list">
+                        <li>Cleaning messy API JSON responses</li>
+                        <li>Using localStorage for persistent data storage</li>
+                        <li>Deploying full-stack Node/Express apps</li>
+                        <li>Best practices for API security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="text-center-custom mb-5" style="margin-top: 60px;">
+            <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+                <h2 style="color: var(--primary-color); font-size: 1.8rem; font-weight: 700; margin-bottom: 20px;">
+                    Ready to Try It Out?
+                </h2>
+                <p style="color: #666; font-size: 1.1rem; margin-bottom: 25px;">
+                    Check out the live demo or explore the source code on GitHub
+                </p>
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <a href="https://kroger-budget-grocery-planner.onrender.com" class="btn-primary-custom" target="_blank">
+                        Launch Live App 🚀
+                    </a>
+                    <a href="https://github.com/zwebb21/Portfolio" class="btn-secondary-custom" target="_blank">
+                        View on GitHub 💻
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
