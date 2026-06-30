@@ -8,20 +8,20 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #1e40af;
-            --secondary-color: #059669;
+            --primary-color: #082235;
+            --secondary-color: #143d5f;
             --accent-color: #f59e0b;
         }
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #dcefff 0%, #75a8d2 100%);
             min-height: 100vh;
         }
         
         .project-header {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
+            color: rgb(253, 253, 255);
             padding: 60px 20px;
             border-radius: 15px;
             margin-bottom: 40px;
@@ -52,6 +52,7 @@
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(8, 34, 53, 0.08);
         }
         
         .screenshot-card:hover {
@@ -60,23 +61,37 @@
         }
         
         .screenshot-placeholder {
-            background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
-            height: 250px;
+            background: #edf5fb;
+            aspect-ratio: 16 / 10;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 18px;
             font-size: 1rem;
             color: #666;
             font-weight: 500;
         }
+
+        .screenshot-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 6px 18px rgba(8, 34, 53, 0.16);
+        }
         
         .screenshot-label {
-            padding: 15px;
-            background: #f8fafc;
-            border-top: 1px solid #e2e8f0;
+            min-height: 64px;
+            padding: 14px 18px;
+            background: var(--primary-color);
             font-weight: 600;
-            color: var(--primary-color);
+            color: white;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.35;
         }
         
         .tech-stack-item {
@@ -219,17 +234,17 @@
         
         <!-- Screenshots Section -->
         <div class="my-5">
-            <h2 class="text-3xl font-bold text-white mb-5 text-center-custom">Project Showcase</h2>
+            <h2 class="text-3xl font-bold text-dark mb-5 text-center-custom">Project Showcase</h2>
             <div class="screenshot-grid">
                 <div class="screenshot-card">
                     <div class="screenshot-placeholder">
-                        📍 Store Location Search
+                        <img src="img/Krogerapisearchresult.png" alt="Kroger store search results by ZIP code">
                     </div>
                     <div class="screenshot-label">Screenshot 1: Find Stores by ZIP Code</div>
                 </div>
                 <div class="screenshot-card">
                     <div class="screenshot-placeholder">
-                        🛍️ Product & Budget List
+                        <img src="img/krogerapiresult .png" alt="Kroger product search and grocery list results">
                     </div>
                     <div class="screenshot-label">Screenshot 2: Search & Build Grocery List</div>
                 </div>
