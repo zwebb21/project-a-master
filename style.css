@@ -445,7 +445,7 @@ border-radius: 24px;
 
 
 
-</body>
+
 
 
 
@@ -647,6 +647,25 @@ text-underline-position:above;
 .see-more-btn:active {
   transform: translateY(0); /* removes lift when pressed */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/* Core dev chips: full-strength version of your existing chip style */
+.stack-chip--primary {
+  font-weight: 600;
+}
+
+/* Creative/design chips: same chip shape, visually quieter */
+.stack-chip--muted {
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.skills-subtext {
+  max-width: 60ch;
 }
 
 @media (max-width: 768px) {

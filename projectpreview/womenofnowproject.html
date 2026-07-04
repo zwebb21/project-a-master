@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women of Now Internship Project | Zarius Webb</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5f6f7c;
+      --violet: #8f2aa8;
+      --magenta: #c32bbf;
+      --teal: #0f766e;
+      --coral: #e1604d;
+      --paper: #fbfaf8;
+      --line: #e7e1ea;
+    }
+
+    * {
+      letter-spacing: 0;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(251, 250, 248, 0.98), rgba(245, 248, 250, 0.96)),
+        radial-gradient(circle at top left, rgba(195, 43, 191, 0.12), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(15, 118, 110, 0.11), transparent 30%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .page-shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .brand-mark {
+      color: var(--violet);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .back-link {
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-link:hover,
+    .brand-mark:hover {
+      color: var(--magenta);
+    }
+
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(280px, 0.86fr);
+      gap: 34px;
+      align-items: center;
+      padding: 34px 0 46px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 14px 0 18px;
+      font-size: clamp(2.35rem, 7vw, 5.6rem);
+      font-weight: 900;
+      line-height: 0.95;
+    }
+
+    .hero-copy {
+      max-width: 710px;
+      color: #44515d;
+      font-size: clamp(1.04rem, 2vw, 1.22rem);
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn-project {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .btn-project:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-live {
+      color: white;
+      background: var(--violet);
+      box-shadow: 0 14px 24px rgba(143, 42, 168, 0.2);
+    }
+
+    .btn-live:hover {
+      color: white;
+      background: #79238f;
+    }
+
+    .btn-code {
+      color: var(--ink);
+      background: white;
+      border: 1px solid #d9d1dd;
+    }
+
+    .btn-code:hover {
+      color: var(--ink);
+      border-color: var(--violet);
+      box-shadow: 0 14px 24px rgba(31, 41, 51, 0.08);
+    }
+
+    .hero-visual {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 22px 45px rgba(31, 41, 51, 0.12);
+      overflow: hidden;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: min(58vh, 620px);
+      min-height: 380px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+
+    .meta-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--line);
+      margin-bottom: 54px;
+    }
+
+    .meta-item {
+      min-height: 110px;
+      background: white;
+      padding: 20px;
+    }
+
+    .meta-label {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .meta-value {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .section-block {
+      margin: 0 0 56px;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    .section-heading h2 {
+      margin: 8px 0 0;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      line-height: 1.04;
+    }
+
+    .overview-grid,
+    .learning-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .info-panel {
+      min-height: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      padding: 24px;
+    }
+
+    .info-panel h3 {
+      margin: 0 0 12px;
+      color: var(--ink);
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+    .info-panel p,
+    .info-panel li {
+      color: #51616f;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .info-panel ul {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 155px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      padding: 22px;
+    }
+
+    .timeline-date {
+      color: var(--violet);
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .timeline-copy h3 {
+      margin: 0 0 8px;
+      font-size: 1.12rem;
+      font-weight: 900;
+    }
+
+    .timeline-copy p {
+      margin: 0;
+      color: #51616f;
+      line-height: 1.7;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 18px;
+    }
+
+    .gallery-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      overflow: hidden;
+      box-shadow: 0 18px 36px rgba(31, 41, 51, 0.08);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      background: #f5f2f6;
+    }
+
+    .gallery-card.small img {
+      height: 330px;
+    }
+
+    .gallery-caption {
+      padding: 18px 20px 20px;
+    }
+
+    .gallery-caption h3 {
+      margin: 0 0 7px;
+      font-size: 1.03rem;
+      font-weight: 900;
+    }
+
+    .gallery-caption p {
+      margin: 0;
+      color: #596875;
+      line-height: 1.6;
+    }
+
+    .stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .stack-pill {
+      border: 1px solid #ded5e2;
+      border-radius: 999px;
+      background: #fff;
+      color: #423449;
+      padding: 8px 13px;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .cta-band {
+      border-radius: 8px;
+      background: linear-gradient(135deg, #2c2730, #572363 55%, #0f766e);
+      color: white;
+      padding: 36px;
+    }
+
+    .cta-band h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.7rem, 4vw, 2.7rem);
+      font-weight: 900;
+    }
+
+    .cta-band p {
+      max-width: 720px;
+      margin-bottom: 22px;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.7;
+    }
+
+    .cta-band .btn-code {
+      color: white;
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .cta-band .btn-code:hover {
+      color: white;
+      border-color: white;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .meta-strip,
+      .overview-grid,
+      .learning-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        padding: 20px 14px 44px;
+      }
+
+      .top-nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero-visual img,
+      .gallery-card img,
+      .gallery-card.small img {
+        height: 360px;
+        min-height: 0;
+      }
+
+      .meta-strip,
+      .overview-grid,
+      .learning-grid,
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        gap: 8px;
+      }
+
+      .cta-band {
+        padding: 28px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="top-nav" aria-label="Project navigation">
+      <a class="brand-mark" href="../index.html">Zarius Webb</a>
+      <a class="back-link" href="../index.html#project-row">Back to Projects</a>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Women of Now LLC Internship</p>
+        <h1>Women of Now Bible Study Landing Page</h1>
+        <p class="hero-copy">
+          During my internship with Women of Now LLC, I helped design and build a landing page for the organization's Bible study program, including the "7 Weeks of Courage" content experience. The work combined WordPress site administration, layout design, content planning, stakeholder feedback, and mission-focused visual choices for a women-centered outreach project.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-project btn-live" href="https://zwebb21.github.io/WomenOfNow/" target="_blank" rel="noopener">View Live Page</a>
+          <a class="btn-project btn-code" href="https://github.com/zwebb21/WomenOfNow" target="_blank" rel="noopener">Open GitHub Repo</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img class="img-fluid" src="../img/womenofnow-homepage.png" alt="Women of Now 7 Weeks of Courage landing page journal screenshot">
+      </div>
+    </section>
+
+    <section class="meta-strip" aria-label="Project details">
+      <div class="meta-item">
+        <div class="meta-label">Role</div>
+        <p class="meta-value">Web Design Intern</p>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Client</div>
+        <p class="meta-value">Women of Now LLC</p>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Focus</div>
+        <p class="meta-value">Landing page, WordPress, content layout</p>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Live Work</div>
+        <p class="meta-value">GitHub Pages project archive</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Project Overview</p>
+        <h2>A landing page built around encouragement, clarity, and outreach.</h2>
+      </div>
+
+      <div class="overview-grid">
+        <article class="info-panel">
+          <h3>What the project does</h3>
+          <p>
+            The page introduces Women of Now's Bible study program and presents the "7 Weeks of Courage" journey in a simple, scannable format. It helps visitors understand the program themes, the type of content members will study, and the faith-based purpose behind the experience.
+          </p>
+        </article>
+        <article class="info-panel">
+          <h3>My contribution</h3>
+          <p>
+            I worked through pre-boarding, gained access to the WordPress backend, reviewed the existing site structure, designed content sections, created rows of boxed learning topics, and adjusted page visuals after feedback from Mrs. Donna and the team.
+          </p>
+        </article>
+        <article class="info-panel">
+          <h3>Why it mattered</h3>
+          <p>
+            Women of Now's mission focuses on encouragement, empowerment, and support for women. The landing page needed to feel welcoming while still giving the organization a professional digital touchpoint for outreach and program communication.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Process</p>
+        <h2>From onboarding to design revisions.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Week 2</div>
+          <div class="timeline-copy">
+            <h3>Pre-boarding and backend setup</h3>
+            <p>
+              I coordinated with the head developer and my sponsor, Mrs. Donna, through email and phone calls. This stage focused on creating a training plan, setting up access, and learning the backend UI of the Women of Now WordPress site.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">March 10, 2024</div>
+          <div class="timeline-copy">
+            <h3>Designing sections 4 and 5</h3>
+            <p>
+              I continued work on the landing page by designing rows of content for the "7 Weeks of Courage" section. The goal was to make the study topics clear by using simple boxed layouts tied to examples and passages from the Bible.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">March 11, 2024</div>
+          <div class="timeline-copy">
+            <h3>Feedback and media direction</h3>
+            <p>
+              In a review call, we discussed page progress and suggested changes. Mrs. Donna provided additional media and emphasized a multicolor visual direction with images featuring women from different cultures.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">What I Learned</p>
+        <h2>Real project habits beyond the page design.</h2>
+      </div>
+
+      <div class="learning-grid">
+        <article class="info-panel">
+          <h3>WordPress workflow</h3>
+          <ul>
+            <li>Navigating an existing WordPress backend</li>
+            <li>Understanding plugins, page structure, and admin tools</li>
+            <li>Working within a live organization's site environment</li>
+          </ul>
+        </article>
+        <article class="info-panel">
+          <h3>Client communication</h3>
+          <ul>
+            <li>Clarifying tasks through calls and email</li>
+            <li>Turning stakeholder feedback into design changes</li>
+            <li>Balancing mission, content, and visual direction</li>
+          </ul>
+        </article>
+        <article class="info-panel">
+          <h3>Content design</h3>
+          <ul>
+            <li>Breaking program information into clear sections</li>
+            <li>Designing repeatable boxes for study topics</li>
+            <li>Using imagery and color to support a welcoming tone</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="stack-list" aria-label="Skills used">
+        <span class="stack-pill">HTML</span>
+        <span class="stack-pill">CSS</span>
+        <span class="stack-pill">Bootstrap</span>
+        <span class="stack-pill">Tailwind CSS</span>
+        <span class="stack-pill">WordPress</span>
+        <span class="stack-pill">Content Layout</span>
+        <span class="stack-pill">Responsive Design</span>
+        <span class="stack-pill">Client Feedback</span>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Project Evidence</p>
+        <h2>Internship notes and design screenshots.</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <img src="../img/women-of-now-seven-weeks-courage.png" alt="Journal entry showing 7 Weeks of Courage landing page design work">
+          <div class="gallery-caption">
+            <h3>7 Weeks of Courage section</h3>
+            <p>
+              The journal entry documents the boxed topic layout, the goal of outlining what members will learn, and the feedback process around color and inclusive media.
+            </p>
+          </div>
+        </article>
+
+        <div class="d-grid gap-3">
+          <article class="gallery-card small">
+            <img src="../img/women-of-now-journal-landing-page.png" alt="Journal entry showing WordPress backend onboarding for Women of Now">
+            <div class="gallery-caption">
+              <h3>WordPress onboarding</h3>
+              <p>
+                Early internship work focused on access, training, and becoming comfortable with the WordPress backend.
+              </p>
+            </div>
+          </article>
+
+          <article class="gallery-card small">
+            <img src="../img/women-of-now-internship-letter.png" alt="Women of Now internship letter screenshot">
+            <div class="gallery-caption">
+              <h3>Internship scope</h3>
+              <p>
+                The internship covered website work, design projects, social media, SEO, WordPress, HTML, and related portfolio-building skills.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <p class="eyebrow text-white">Links</p>
+      <h2>View the finished page and source code.</h2>
+      <p>
+        The live page is hosted through GitHub Pages, and the repository contains the project files for the Women of Now landing page.
+      </p>
+      <div class="hero-actions mt-0">
+        <a class="btn-project btn-live" href="https://zwebb21.github.io/WomenOfNow/" target="_blank" rel="noopener">Open Live Page</a>
+        <a class="btn-project btn-code" href="https://github.com/zwebb21/WomenOfNow" target="_blank" rel="noopener">Open GitHub Repo</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
