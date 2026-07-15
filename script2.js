@@ -5,8 +5,11 @@ document.querySelectorAll('.card').forEach(card => {
   if (!desc || !btn) return; // skip if either is missing
 
   const fullText = desc.innerHTML;
-  const words = fullText.split(' ');
+  const words = fullText.split(' ');// this split the text into an array of words
 
+
+
+  // check to see if the word lenght is 30
   if (words.length > 30) {
     const shortText = words.slice(0, 30).join(' ') + '...';
     desc.innerHTML = shortText;
@@ -20,7 +23,7 @@ document.querySelectorAll('.card').forEach(card => {
         btn.innerText = 'See more';
       }
     });
-  } else {
-    btn.style.display = 'none';
+    } else {
+      btn.style.display = 'none';
   }
 });

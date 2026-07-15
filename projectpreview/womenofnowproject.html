@@ -6,6 +6,7 @@
   <title>Women of Now Internship Project | Zarius Webb</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="carosel.css">
   <style>
     :root {
       --ink: #1f2933;
@@ -574,7 +575,7 @@
       </div>
     </section>
 
-    <section class="section-block">
+    <!-- <section class="section-block">
       <div class="section-heading">
         <p class="eyebrow">Project Evidence</p>
         <h2>Internship notes and design screenshots.</h2>
@@ -613,7 +614,253 @@
           </article>
         </div>
       </div>
+    </section> -->
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Project Evidence</p>
+        <h2>Internship notes and design screenshots.</h2>
+      </div>
+    
+      <div
+        id="projectEvidenceCarousel"
+        class="carousel slide project-evidence-carousel"
+        data-bs-ride="carousel"
+      >
+        <!-- Slide indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#projectEvidenceCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="7 Weeks of Courage"
+          ></button>
+    
+          <button
+            type="button"
+            data-bs-target="#projectEvidenceCarousel"
+            data-bs-slide-to="1"
+            aria-label="WordPress onboarding"
+          ></button>
+    
+          <button
+            type="button"
+            data-bs-target="#projectEvidenceCarousel"
+            data-bs-slide-to="2"
+            aria-label="Internship scope"
+          ></button>
+          <button
+          type="button"
+          data-bs-target="#projectEvidenceCarousel"
+          data-bs-slide-to="3"
+          aria-label="Student weekly report"
+        ></button>
+      
+        <button
+          type="button"
+          data-bs-target="#projectEvidenceCarousel"
+          data-bs-slide-to="4"
+          aria-label="Additional internship evidence"
+        ></button>
+
+
+        </div>
+    
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <article class="gallery-card">
+              <img
+                src="../img/women-of-now-seven-weeks-courage.png"
+                class="d-block w-100 evidence-image"
+                alt="Journal entry showing 7 Weeks of Courage landing page design work"
+                data-bs-toggle="modal"
+                data-bs-target="#imagePreviewModal"
+                role="button"
+                tabindex="0"
+              >
+    
+              <div class="gallery-caption">
+                <h3>7 Weeks of Courage section</h3>
+                <p>
+                  The journal entry documents the boxed topic layout, the goal of
+                  outlining what members will learn, and the feedback process
+                  around color and inclusive media.
+                </p>
+              </div>
+            </article>
+          </div>
+    
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <article class="gallery-card">
+              <img
+                src="../img/women-of-now-journal-landing-page.png"
+                class="d-block w-100 evidence-image"
+                alt="Journal entry showing WordPress backend onboarding for Women of Now"
+                data-bs-toggle="modal"
+                data-bs-target="#imagePreviewModal"
+                role="button"
+                tabindex="0"
+              >
+    
+              <div class="gallery-caption">
+                <h3>WordPress onboarding</h3>
+                <p>
+                  Early internship work focused on access, training, and becoming
+                  comfortable with the WordPress backend.
+                </p>
+              </div>
+            </article>
+          </div>
+    
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <article class="gallery-card">
+              <img
+                src="../img/women-of-now-internship-letter.png"
+                class="d-block w-100 evidence-image"
+                alt="Women of Now internship letter screenshot"
+                data-bs-toggle="modal"
+                data-bs-target="#imagePreviewModal"
+                role="button"
+                tabindex="0"
+              >
+    
+              <div class="gallery-caption">
+                <h3>Internship scope</h3>
+                <p>
+                  The internship covered website work, design projects, social
+                  media, SEO, WordPress, HTML, and related portfolio-building
+                  skills.
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- slde 4  -->
+          <div class="carousel-item">
+            <article class="gallery-card">
+              <img
+                src="../img/Women-of-now-Wk-report.png"
+                class="d-block w-100 evidence-image"
+                alt="Women of Now internship letter screenshot"
+                data-bs-toggle="modal"
+                data-bs-target="#imagePreviewModal"
+                role="button"
+                tabindex="0"
+              >
+    
+              <div class="gallery-caption">
+                <h3>Student Weekly Report</h3>
+                <p>
+                  Every week I submitted a weekly report to my internship sponsor, Mrs. Donna, to summarize the work I completed and the progress I made on the landing page project.
+                </p>
+              </div>
+            </article>
+          </div>
+
+<!-- Slide 5 -->
+<div class="carousel-item">
+  <article class="gallery-card">
+    <img
+      src="../img/Women-of-now-ColorGrading.png"
+      class="d-block w-100 evidence-image"
+      alt="Description of the fifth internship screenshot"
+      data-bs-toggle="modal"
+      data-bs-target="#imagePreviewModal"
+      role="button"
+      tabindex="0"
+    >
+
+    <div class="gallery-caption">
+      <h3>Color Grading and Using Design Princples</h3>
+      <p>
+        i used design and adobe kuler to create a color palette that was consistent with the brand and the message of the landing page. I also used design principles to create a layout that was easy to navigate and visually appealing.
+      </p>
+    </div>
+  </article>
+</div>
+
+
+
+
+        </div>
+    
+        <!-- Previous button -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#projectEvidenceCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+    
+          <span class="visually-hidden">Previous image</span>
+        </button>
+    
+        <!-- Next button -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#projectEvidenceCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+    
+          <span class="visually-hidden">Next image</span>
+        </button>
+      </div>
     </section>
+    
+    <!-- Enlarged image modal -->
+    <div
+      class="modal fade image-preview-modal"
+      id="imagePreviewModal"
+      tabindex="-1"
+      aria-labelledby="imagePreviewLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2
+              class="modal-title fs-5"
+              id="imagePreviewLabel"
+            >
+              Screenshot preview
+            </h2>
+    
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close enlarged screenshot"
+            ></button>
+          </div>
+    
+          <div class="modal-body">
+            <img
+              id="enlargedEvidenceImage"
+              src=""
+              alt=""
+              class="img-fluid"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    
 
     <section class="cta-band">
       <p class="eyebrow text-white">Links</p>
@@ -627,5 +874,9 @@
       </div>
     </section>
   </main>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+></script>
+<script src="carosel.js"></script>
 </body>
 </html>
